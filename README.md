@@ -1,1 +1,0 @@
-# NextJs-1-DevLabs-2025
