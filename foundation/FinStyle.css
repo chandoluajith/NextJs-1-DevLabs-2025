@@ -1,0 +1,74 @@
+body {
+    background: linear-gradient(skyblue,lightgreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-family: Candara,Arial;
+    font-size: 5em;
+    border: 2px outset;
+    border-color: lightgoldenrodyellow;
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px gray;
+}
+h1:hover{
+    box-shadow: 3px 3px 3px black;
+}
+h2 {
+    color: white;
+    text-align: center;
+    font-family: Candara, Arial;
+    font-size: 5em;
+}
+#ph1 {
+    color: white;
+    text-align: center;
+    font-family: sans-serif, Arial;
+    font-size: 2em;
+    margin-top: 20px;
+}
+#p1 {
+    color: black;
+    text-align: center;
+    font-family: Arial,Candara;
+    font-size: 1.5em;
+}
+#box1 {
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    background-color: lightblue;
+    position: absolute;
+    top: 50px;
+}
+#box2 {
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    background-color: lightgreen;
+    margin-top: 20px;
+    position: relative;
+    top: -100px;
+    left: 100px;
+}
+a:link{
+    color:mediumpurple;
+}
+a:visited {
+    color: blue
+}
+a:hover {
+    color: red;
+}
+a:active{
+    color: tomato
+}
+li:nth-child(2n+1) {
+    color: darkslategray;
+}
+li:nth-child(2n+2){
+    color: black;
+}
