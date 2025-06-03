@@ -1,3 +1,4 @@
+
 body {
     background: linear-gradient(skyblue,lightgreen);
     background-repeat: no-repeat;
@@ -77,10 +78,10 @@ li:nth-child(2n+2){
     justify-content: center;
     align-items: center;
     height: 100px;
-    background-color: lightgreen;
+    background-color: lightcoral;
 }
 .flex-container div {
-    background-color: lavender;
+    background-color: lightblue;
     border: 1px solid black;
     padding: 10px;
     margin: 5px;
@@ -88,9 +89,9 @@ li:nth-child(2n+2){
     text-align: center;
 }
 .flex-container figure {
-    background-color: lavender;
+    background-color: lightgreen;
     border: 1px solid black;
-    padding: 15px;
+    padding: 10px;
     margin: 5px;
     flex-grow: 1;
     text-align: center;
@@ -108,16 +109,40 @@ li:nth-child(2n+2){
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding: 10px;
-    background-color: lightgreen;
+    background-color: paleturquoise;
 }
 .grid-container figure {
-    background-color: lavender;
-    padding: 20px;
+    background-color: lightcoral;
     border: 1px solid black;
-    border-radius: 10px;
+    padding: 20px;
     text-align: center;
+
 }
 .grid-container img {
     max-width: 100%;
     height: auto;
+}
+nav {
+    margin: 20px;
+}
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 5px;
+    background-color: lavender;
+    border: 1px solid black;
+}
+.section-grid a {
+    display: block;
+    background-color: lightblue;
+    color: navy;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+.section-grid a:hover {
+    background-color: lightcoral;
+    color: white;
 }
