@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epsilon (Robotics Club)</title>
+    <link rel="stylesheet" href="/NextJs-1-DevLabs-2025/foundation/style/epsilon.css">
 </head>
-<body style="background-color:rgba(240, 192, 240, 0.874);">
+<body>
     <header>
-     <div style="background-color: blue;  height:55px; width:600px">
-      <h1 style="color:rgb(0, 255, 204)">EPSILON-(Robotics-Club of IIT-Bh) <img src="https://roboticsclub.iitbhilai.ac.in/images/epsilon-logo.png" alt="epsilon-logo" height="50"></h1>
-     </div>   
+     <div id="h1">
+      <h1 style="color:rgb(0, 255, 204)">EPSILON-(Robotics-Club of IIT-Bh) <div class="log"><img src="https://roboticsclub.iitbhilai.ac.in/images/epsilon-logo.png" alt="epsilon-logo" height="50"></div></h1>
+     </div>  
     </header>
-    <nav style="text-align:right">
+    <nav>
     <a href="epsilon.html">Home</a>
     <a href="roboticsclub.iitbhilai.ac.in">Contact</a>
   </nav>
   <main>
-    <div style="font-family: cursive; line-height: 1.6;">
+    <div id="Rv">
     <section>
         <section>
             <h2 style="text-align: center;"><u>Robotics Vision</u></h2>
@@ -85,7 +86,7 @@
 <hr>
     <section>
         <h2>Robotics Specialization:</h2>
-        <ul>
+        <ul class="spec">
   <li>Autonomous Systems</li>
   <li>Humanoid Robotics</li>
   <li>Industrial Robotics</li>
@@ -107,8 +108,8 @@
     </section>
 <br>
 <hr>
-    <table border="1" cellpadding="8" cellspacing="0">
-        <caption>Robots</caption>
+<h4 id ="cap">Robots</h4><br>
+    <table>
   <thead>
     <tr>
       <th>Robot Name</th>
@@ -157,7 +158,8 @@
   </tbody>
 </table>
 <br>
-<h3 style="text-align: center;"><u>Glimpses</u></h3>
+<div class="ima">
+<h3 >Glimpses</h3>
 <figure>
     <img src="https://roboticsclub.iitbhilai.ac.in/images/projects/Automated%20Tracking%20Robot.jpeg" alt="prototype" height="150">
     <figcaption>Automated Tracking Robot</figcaption>
@@ -174,6 +176,7 @@
     <img src="https://roboticsclub.iitbhilai.ac.in/images/meraz-22/bots.jpg" alt="Meraz-22" height="150">
     <figcaption>Robo-Kabaddi</figcaption>
 </figure>
+</div>
 <hr>
 <br>
 <h3 style="text-align: center;">ROBOTICS-TEAM Application</h3>
@@ -245,19 +248,18 @@
   </section>
 <br>
 <hr>
-<blockquote>
+</div>
+  </main>
+  <div class="end">
+  <blockquote>
     "IMAGINE, INVENT, INSPIRE"
     <cite>— Motto of Robotics Club</cite>
 </blockquote>
-
-
-</div>
-  </main>
-  <br><br>
+  <br>
   <br>
   <section>
-    Follow on:
-    <ul>
+    Follow us on:
+    <ul class="links">
         <li><a href="https://www.linkedin.com/in/the-epsilon-club-40a57a213/"><img src="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk4Mi1kNS0xMF8xLnBuZw.png" height="20"></a></li>
 
         <li><a href="https://www.facebook.com/epsiloniitbh?mibextid=ZbWKwL"><img src="https://store-images.s-microsoft.com/image/apps.30645.9007199266245907.cb06f1f9-9154-408e-b4ef-d19f2325893b.ac3b465e-4384-42a8-9142-901c0405e1bc" height="20"></a></li>
@@ -266,6 +268,6 @@
     </ul>
   </section>
   <br><br>
-<footer style="text-align: center;"> Made by Dev-Labs 2025</footer>
+<footer style="text-align: center;"> Made by Dev-Labs 2025</footer></div>
 </body>
 </html>

@@ -1,0 +1,148 @@
+
+body {
+    background: linear-gradient(skyblue,lightgreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-family: Candara,Arial;
+    font-size: 5em;
+    border: 2px outset;
+    border-color: lightgoldenrodyellow;
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px gray;
+}
+h1:hover{
+    box-shadow: 3px 3px 3px black;
+}
+h2 {
+    color: white;
+    text-align: center;
+    font-family: Candara, Arial;
+    font-size: 5em;
+}
+#ph1 {
+    color: white;
+    text-align: center;
+    font-family: sans-serif, Arial;
+    font-size: 2em;
+    margin-top: 20px;
+}
+#p1 {
+    color: black;
+    text-align: center;
+    font-family: Arial,Candara;
+    font-size: 1.5em;
+}
+#box1 {
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    background-color: lightblue;
+    position: absolute;
+    top: 50px;
+}
+#box2 {
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    background-color: lightgreen;
+    margin-top: 20px;
+    position: relative;
+    top: -100px;
+    left: 100px;
+}
+a:link{
+    color:mediumpurple;
+}
+a:visited {
+    color: blue
+}
+a:hover {
+    color: red;
+}
+a:active{
+    color: tomato
+}
+li:nth-child(2n+1) {
+    color: darkslategray;
+}
+li:nth-child(2n+2){
+    color: black;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: lightcoral;
+}
+.flex-container div {
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    flex-grow: 1;
+    text-align: center;
+}
+.flex-container figure {
+    background-color: lightgreen;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    flex-grow: 1;
+    text-align: center;
+}
+.flex-container img {
+    max-width: 100%;
+    height: auto;
+}
+.flex-container figcaption {
+    font-style: italic;
+    color: black;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+    background-color: paleturquoise;
+}
+.grid-container figure {
+    background-color: lightcoral;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+
+}
+.grid-container img {
+    max-width: 100%;
+    height: auto;
+}
+nav {
+    margin: 20px;
+}
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 5px;
+    background-color: lavender;
+    border: 1px solid black;
+}
+.section-grid a {
+    display: block;
+    background-color: lightblue;
+    color: navy;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+.section-grid a:hover {
+    background-color: lightcoral;
+    color: white;
+}

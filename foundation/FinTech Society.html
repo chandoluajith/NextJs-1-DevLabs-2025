@@ -3,24 +3,27 @@
 <head>
     <meta charset="utf-8" />
     <title>FinTech Society of IIT Bhilai</title>
+    <link rel = "stylesheet" href ="FinStyle.css">
 </head>
 <body>
     <header>
-        <h1>FinTech Society</h1>
-        <p><em>RBI kehta hein, ....</em></p>
+        <h1 >FinTech Society</h1>
+        <p id="ph1"><em>RBI kehta hein, jan kar baniye, FinTech join kijiye</em></p>
     </header>
 
     <nav>
-        <a href="#Overview">Overview</a>
-        <a href="#Events">Events</a>
-        <a href="#SocialMedia">Social Media Handles</a>
-        <a href="#Gallery">Gallery</a>
-        <a href="#Join">Join</a>
+        <div class="section-grid">
+            <a href="#Overview">Overview</a>
+            <a href="#Events">Events</a>
+            <a href="#SocialMedia">Media</a>
+            <a href="#Gallery">Gallery</a>
+            <a href="#Join">Join</a>
+        </div>
     </nav>
 
     <main>
         <section id="Overview">
-            <p>
+            <p id="p1">
                 Welcome to the FinTech Society.
                 A community where we discuss personal finance, algorithmic trading, AI in finance, RBI rules, crypto (DeFi), Web3, real estate, and practical money strategies. Stay updated on scam alerts, government schemes, startup stories, and banking issues. Learn, share, and grow your financial wisdom with smart tools, tech, and smarter minds — all in one place!
             </p>
@@ -36,7 +39,7 @@
         </section>
 
         <section id="SocialMedia">
-            <h2>Social Media Handles</h2>
+            <h2 >Social Media Handles</h2>
             <ul>
                 <li><a href="https://x.com/fintech_iitbh" target="_blank">X (Twitter)</a></li>
                 <li><a href="https://instagram.com/fintech_iitbh" target="_blank">Instagram</a></li>
@@ -46,29 +49,26 @@
         </section>
 
         <section id="Gallery">
-            <h2>Gallery</h2>
-
-            <figure>
-                <img src="DSCF0021.JPG" alt="Ashwin Sir speaking at FinTech Conference">
-                <figcaption>Event: FinTech Conference</figcaption>
-            </figure>
-
-            <figure>
-                <img src="WhatsApp Image 2025-06-01 at 2.16.21 PM.jpeg" alt="AI Bootcamp">
-                <figcaption> AI and ML Bootcamp</figcaption>
-            </figure>
-
-            <figure>
-                <img src="WhatsApp Image 2025-06-01 at 2.16.18 PM.jpeg" alt="FinTech Society">
-                <figcaption> FinTech Society </figcaption>
-            </figure>
-
-            <figure>
-                <img src="WhatsApp Image 2025-06-01 at 9.14.08 AM.jpeg" alt="FinTech's Team'">
-                <figcaption>FinTech 1st Session</figcaption>
-            </figure>
-
-        </section>
+            <h2>Gallery in Flex Format</h2>
+            <div class="flex-container">
+        <figure>
+            <img src="images/DSCF0021.JPG" alt="Ashwin Sir speaking at FinTech Conference">
+            <figcaption>Event: FinTech Conference</figcaption>
+        </figure>
+        <figure>
+            <img src="images/WhatsApp Image 2025-06-01 at 2.16.21 PM.jpeg" alt="AI Bootcamp">
+            <figcaption>AI and ML Bootcamp</figcaption>
+        </figure>
+        <figure>
+            <img src="images/WhatsApp Image 2025-06-01 at 2.16.18 PM.jpeg" alt="FinTech Society">
+            <figcaption>FinTech Society</figcaption>
+        </figure>
+        <figure>
+            <img src="images/WhatsApp Image 2025-06-01 at 9.14.08 AM.jpeg" alt="FinTech's Team">
+            <figcaption>FinTech 1st Session</figcaption>
+        </figure>
+    </div>
+</section>
 
         <section id="Join">
             <h2>Join the FinTech Society</h2>
@@ -115,3 +115,4 @@
     </footer>
 </body>
 </html>
+

@@ -1,0 +1,148 @@
+:root {
+  --primary: #0a192f;
+  --secondary: #112240;
+  --accent: #559fea;
+  --text-light: #ccd6f6;
+  --text-muted: #8892b0;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Urbanist", sans-serif;
+  background-color: var(--primary);
+  color: var(--text-light);
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  background-color: var(--secondary);
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0.5rem 1rem;
+}
+
+nav ul li a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid var(--accent);
+}
+
+th,
+td {
+  padding: 0.75rem;
+  text-align: left;
+}
+
+form input,
+form select,
+form textarea,
+form button {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+form button {
+  background-color: var(--accent);
+  color: var(--primary);
+  cursor: pointer;
+}
+
+figure {
+  display: inline-block;
+  margin: 1rem;
+  text-align: center;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.club-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.club-item {
+  background-color: #559fea;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.club-item:hover {
+  transform: scale(1.05);
+}
+
+.club-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin: 1rem 0;
+}
+
+.socials ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+}
+
+.socials li {
+  margin: 0.5rem 1rem;
+}
+
+.socials a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h2,
+h3 {
+  color: #559fea;
+}
