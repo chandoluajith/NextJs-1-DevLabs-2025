@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+    color: azure;
+}
+
+header {
+    text-align: center;
+}
+
+nav ul {
+    background-color: darkslateblue;
+    display: flex;
+    border-bottom: 2px solid azure;
+    border-top: 2px solid azure;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    gap: 5px;
+
+    li {
+        padding: 2px;
+
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+h2 {
+    color: turquoise;
+}
+
+a {
+    color: antiquewhite;
+}
+
+#mission p:nth-of-type(2) {
+    color: cornflowerblue;
+
+}
+
+blockquote {
+    color: cornflowerblue;
+}
+
+.imgcontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#Resources #name {
+    color: antiquewhite;
+
+}
+
+fieldset {
+    label {
+        color: antiquewhite;
+    }
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
