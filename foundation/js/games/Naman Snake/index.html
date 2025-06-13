@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Snake Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <i class="fas fa-snake"></i>
+          <span>Snake Game</span>
+        </div>
+        <div class="controls">
+          <button class="btn" id="new-game-btn" title="New Game">
+            <i class="fas fa-plus"></i>
+          </button>
+          <button class="btn" id="pause-btn" title="Pause Game">
+            <i class="fas fa-pause"></i>
+          </button>
+          <button class="btn" id="settings-btn" title="Settings">
+            <i class="fas fa-cog"></i>
+          </button>
+        </div>
+      </header>
+
+      <div class="game-info">
+        <div class="score-card">
+          <div class="score-label">SCORE</div>
+          <div class="score-value" id="current-score">0</div>
+        </div>
+        <div class="score-card">
+          <div class="score-label">HIGH SCORE</div>
+          <div class="score-value" id="high-score">0</div>
+        </div>
+      </div>
+
+      <div class="game-container">
+        <canvas id="game-canvas"></canvas>
+        <div class="game-over-animation" id="game-over-animation"></div>
+
+        <div class="overlay" id="start-screen">
+          <h2>Snake Game</h2>
+          <p>Use arrow keys or buttons to control the snake</p>
+          <button class="btn-lg" id="start-btn">Start Game</button>
+        </div>
+
+        <div class="overlay" id="game-over-screen">
+          <h2>Game Over!</h2>
+          <p>Your score: <span id="final-score">0</span></p>
+          <button class="btn-lg" id="restart-btn">Play Again</button>
+        </div>
+
+        <div class="overlay" id="pause-screen">
+          <h2>Game Paused</h2>
+          <p>Press resume to continue</p>
+          <button class="btn-lg" id="resume-btn">Resume</button>
+        </div>
+      </div>
+
+      <div class="mobile-controls">
+        <div class="control-btn up-btn" id="up-btn">
+          <i class="fas fa-arrow-up"></i>
+        </div>
+        <div class="control-btn left-btn" id="left-btn">
+          <i class="fas fa-arrow-left"></i>
+        </div>
+        <div class="control-btn down-btn" id="down-btn">
+          <i class="fas fa-arrow-down"></i>
+        </div>
+        <div class="control-btn right-btn" id="right-btn">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="control-btn pause-btn" id="mobile-pause-btn">
+          <i class="fas fa-pause"></i> Pause
+        </div>
+      </div>
+    </div>
+
+    <div class="settings-modal" id="settings-modal">
+      <div class="settings-content">
+        <div class="settings-header">
+          <h2 class="settings-title">Game Settings</h2>
+          <button class="close-btn" id="close-settings">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="settings-group">
+          <label class="settings-label">Difficulty Level</label>
+          <div class="radio-group">
+            <label class="radio-option">
+              <input type="radio" name="difficulty" value="easy" checked />
+              Easy
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="difficulty" value="medium" />
+              Medium
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="difficulty" value="hard" />
+              Hard
+            </label>
+          </div>
+        </div>
+
+        <div class="settings-group">
+          <label class="settings-label">Snake Color</label>
+          <div class="color-options">
+            <div
+              class="color-option selected"
+              style="background-color: #3498db"
+              data-color="#3498db"
+            ></div>
+            <div
+              class="color-option"
+              style="background-color: #e74c3c"
+              data-color="#e74c3c"
+            ></div>
+            <div
+              class="color-option"
+              style="background-color: #2ecc71"
+              data-color="#2ecc71"
+            ></div>
+            <div
+              class="color-option"
+              style="background-color: #9b59b6"
+              data-color="#9b59b6"
+            ></div>
+            <div
+              class="color-option"
+              style="background-color: #f39c12"
+              data-color="#f39c12"
+            ></div>
+            <div
+              class="color-option"
+              style="background-color: #1abc9c"
+              data-color="#1abc9c"
+            ></div>
+          </div>
+        </div>
+
+        <div class="settings-group">
+          <label class="settings-label">Dark Mode</label>
+          <label class="toggle-switch">
+            <input type="checkbox" id="dark-mode-toggle" />
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <button class="save-btn" id="save-settings">Save Settings</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
