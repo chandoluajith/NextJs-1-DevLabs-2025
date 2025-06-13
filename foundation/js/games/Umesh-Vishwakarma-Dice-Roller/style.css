@@ -1,0 +1,50 @@
+
+.dice-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top: 90px;
+}
+.dice{
+    width:100px;
+    height: 100px;
+    background-color: rgb(32, 55, 226);
+    position:relative;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
+
+}
+.dice-dot{
+    --top:0%;
+    --left:0%;
+    width:15px; 
+    height:15px;
+    border-radius:50%;
+    background-color: greenyellow;
+    
+    position:absolute;
+    top:var(--top);
+    left:var(--left);
+    transform:translateX(calc(var(--left)*-1)) translateY(calc(var(--top)*-1));
+}
+.roll{
+    margin-top:50px;
+    height:50px;
+    width:100px;
+    border-radius: 5px;
+    cursor:center;
+    background-color:wheat;
+}
+body{
+    background-color: black;
+}
+h1{
+    color: aqua;
+    text-align: center;
+    font-size: 50px;
+}
+.btn{
+    display:flex;
+    justify-content:center;
+}
