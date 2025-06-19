@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Orange_progress from "./components/Orange_progress.js";
 import ToDo from "./components/todo.js";
+import Link from 'next/link'
 
 export default function Home() {
   return (
