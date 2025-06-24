@@ -2,6 +2,8 @@ import Image from "next/image";
 import Orange_progress from "./components/Orange_progress.js";
 import ToDo from "./components/todo.js";
 import GreenDone from "./components/green_done.js";
+import Card from "./components/card.js";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -11,6 +13,7 @@ export default function Home() {
         <ToDo />
         <Orange_progress />
         <GreenDone />
+        <Card />
       </div>
     </main>
   );
