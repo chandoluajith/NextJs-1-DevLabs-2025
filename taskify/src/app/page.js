@@ -2,6 +2,8 @@ import Image from "next/image";
 import Orange_progress from "./components/Orange_progress.js";
 import ToDo from "./components/todo.js";
 import Card from "./components/card.js";
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <main className="p-8">
